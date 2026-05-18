@@ -1,17 +1,13 @@
 # T1030-Gym-Orientado-a-Objetos
-Este proyecto consiste en el diseño de un sistema para administrar un gimnasio usando Programación Orientada a Objetos y diagramas UML. Su objetivo es organizar la información de usuarios, entrenadores, rutinas, membresías y pagos, evitando el manejo manual que suele generar errores.
+Este proyecto consiste en el diseño de un sistema para administrar un gimnasio usando Programación Orientada a Objetos y diagramas UML. El objetivo es organizar la información de usuarios, entrenadores, rutinas, membresías y pagos de forma más eficiente, evitando errores que normalmente ocurren cuando todo se maneja manualmente.
 
-Problema
+**Problemática**
 
-En muchos gimnasios pequeños la información se maneja de forma manual, lo que puede causar:
+Muchos gimnasios pequeños todavía administran su información en papel o en archivos simples, lo que puede causar desorganización y errores frecuentes. Por ejemplo, algunos pagos pueden no registrarse correctamente, las membresías pueden vencer sin que exista un control adecuado y también puede haber problemas al asignar rutinas o entrenadores a los usuarios.
 
-pérdida de datos de usuarios
-pagos no registrados correctamente
-membresías vencidas sin control
-mala asignación de rutinas
-desorganización general
+Además, cuando la información no está organizada, es más difícil llevar el control de clientes activos, pagos pendientes y entrenamientos asignados. Por esta razón se propone un sistema orientado a objetos que permita administrar toda la información de manera más clara y segura.
 
-Clases del sistema
+**Clases del sistema**
 
 Persona: contiene datos básicos como id, nombre, edad y teléfono.
 Usuario: representa a los clientes del gimnasio.
@@ -21,20 +17,25 @@ Membresía: controla la vigencia del acceso al gimnasio.
 Pago: registra los pagos realizados.
 Gym: administra todo el sistema.
 
-Relaciones UML
+**Relaciones UML**
 
 Herencia: Usuario y Entrenador heredan de Persona.
 Asociación: Usuario se relaciona con Rutina y Pago.
 Composición: Gym contiene y organiza los entrenadores.
 
-Casos de fallo
+**Casos donde el sistema podría fallar**
 
-Membresías vencidas no detectadas
-Pagos rechazados o no registrados
-Usuarios duplicados
-Rutinas inexistentes o mal asignadas
-Errores en el registro de información
+El sistema también considera algunos casos que podrían afectar su funcionamiento. Por ejemplo:
 
-Conclusión
+Membresías vencidas que no sean actualizadas
+Pagos rechazados o mal registrados
+Usuarios duplicados dentro del sistema
+Rutinas inexistentes o asignadas incorrectamente
+Información incompleta al registrar usuarios
+Errores al guardar datos importantes
+
+Estos casos son importantes porque ayudan a identificar posibles problemas y mejorar la estabilidad del sistema.
+
+**Conclusión**
 
 El sistema mejora la organización del gimnasio al automatizar el control de usuarios, pagos y rutinas, reduciendo errores y facilitando la administración.
