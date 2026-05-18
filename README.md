@@ -1,4 +1,4 @@
-# T1030-Fynix-Orientado-a-Objetos
+# T1030-Gym-Orientado-a-Objetos
 Este proyecto consiste en el diseño de un sistema para administrar un gimnasio usando Programación Orientada a Objetos y diagramas UML. Su objetivo es organizar la información de usuarios, entrenadores, rutinas, membresías y pagos, evitando el manejo manual que suele generar errores.
 
 Problema
