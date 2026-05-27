@@ -7,6 +7,7 @@
 using namespace std;
 
 class Pago{
+
 private:
     int id;
     float monto;
@@ -29,8 +30,12 @@ public:
     }
 
     void mostrarInfo(){
+
         cout << "Monto: $" << monto << endl;
+        cout << "Metodo de pago: " << metodoPago << endl;
+        cout << "Estado: " << estado << endl;
     }
+
 };
 
 #endif

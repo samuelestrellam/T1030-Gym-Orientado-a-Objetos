@@ -8,6 +8,7 @@
 using namespace std;
 
 class Usuario : public Persona{
+
 private:
     bool membresiaActiva;
     string fechaRegistro;
@@ -26,6 +27,7 @@ public:
 
     void renovarMembresia(){
         membresiaActiva = true;
+
         cout << "Membresia renovada" << endl;
     }
 
@@ -33,12 +35,22 @@ public:
         cout << "Rutina asignada al usuario" << endl;
     }
 
-    // Sobreescritura
     void mostrarInfo() override{
+
         cout << "USUARIO" << endl;
+
         Persona::mostrarInfo();
-        cout << "Fecha Registro: " << fechaRegistro << endl;
+
+        cout << "Fecha de registro: " << fechaRegistro << endl;
+
+        if(membresiaActiva){
+            cout << "Membresia activa" << endl;
+        }
+        else{
+            cout << "Membresia inactiva" << endl;
+        }
     }
+
 };
 
 #endif

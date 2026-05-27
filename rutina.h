@@ -7,6 +7,7 @@
 using namespace std;
 
 class Rutina{
+
 private:
     int id;
     string nombre;
@@ -18,6 +19,7 @@ public:
     Rutina(){}
 
     Rutina(int id, string nombre, string descripcion, string dificultad){
+
         this->id = id;
         this->nombre = nombre;
         this->descripcion = descripcion;
@@ -25,12 +27,11 @@ public:
     }
 
     void mostrarRutina(){
+
         cout << "Rutina: " << nombre << endl;
+        cout << "Dificultad: " << dificultad << endl;
     }
 
-    void actualizarRutina(){
-        cout << "Rutina actualizada" << endl;
-    }
 };
 
 #endif

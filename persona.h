@@ -15,7 +15,6 @@ protected:
 
 public:
 
-    // Sobrecarga
     Persona(){
         id = 0;
         nombre = "";
@@ -30,7 +29,6 @@ public:
         this->telefono = telefono;
     }
 
-    // Sobreescritura
     virtual void mostrarInfo(){
         cout << "ID: " << id << endl;
         cout << "Nombre: " << nombre << endl;
@@ -38,14 +36,8 @@ public:
         cout << "Telefono: " << telefono << endl;
     }
 
-    // Getters y Setters
-    void setNombre(string nombre){
-        this->nombre = nombre;
-    }
+    virtual ~Persona(){}
 
-    string getNombre(){
-        return nombre;
-    }
 };
 
 #endif

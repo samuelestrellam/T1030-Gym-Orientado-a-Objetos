@@ -7,6 +7,7 @@
 using namespace std;
 
 class Membresia{
+
 private:
     int id;
     string tipo;
@@ -29,12 +30,16 @@ public:
     }
 
     bool estaActiva(){
+
         return true;
     }
 
     void mostrarInfo(){
+
         cout << "Tipo: " << tipo << endl;
+        cout << "Costo: $" << costo << endl;
     }
+
 };
 
 #endif

@@ -4,21 +4,18 @@ int main(){
 
     Usuario u1(917, "Samuel Estrella Martinez", 19, "4461165657", true, "21/05/2026");
 
-    Entrenador e1(158, "Jonatan Caleb López Zuñiga", 18, "4421238234",
-                   "Rutina completa en hombres", 3);
+    Entrenador e1(158, "Jonatan Caleb Lopez Zuniga", 18, "4421238234",
+                   "Rutina de tren superior", 3);
 
-    // Sobreescritura
-    u1.mostrarInfo();
+    Persona* personas[2];
 
-    cout << endl;
+    personas[0] = &u1;
+    personas[1] = &e1;
 
-    e1.mostrarInfo();
-
-    cout << endl;
-
-    // Sobrecarga
-    e1.asignarRutina();
-    e1.asignarRutina("Pecho, Hombro Tricep");
+    for(int i = 0; i < 2; i++){
+        personas[i]->mostrarInfo();
+        cout << endl;
+    }
 
     return 0;
 }
